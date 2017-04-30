@@ -31,4 +31,25 @@ Ref: https://github.com/docker/docker/issues/8710
 
 2. Change the docker-run.sh ip line to "Docker ToolBox" if not using Docker for Mac
 
-3. In another host terminal: `./docker-run.sh`
+3. In another host terminal:
+  ```
+  ./docker-run-mac.sh
+  ```
+ Example: [docker-run-mac.sh](u14-utils/docker-run-mac.sh)
+ 
+ 
+ ### Linux
+ 
+ ```
+ xhost -
+ ```
+ 
+ ```
+ nvidia-docker run -it \
+   --env="DISPLAY" \
+   --net=host \
+   --volume "$HOME/.Xauthority:/root/.Xauthority:rw" \
+   --volume "$HOME/sharefolder:/sharefolder" \
+   kunfengchen/u14-utils /bin/bash
+ ```
+   
