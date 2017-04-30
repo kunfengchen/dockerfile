@@ -1,1 +1,34 @@
-# dockerfile
+## Docker Documentation
+https://docs.docker.com/
+
+## Using Dockerfile
+
+cd to one of subdir for the specific Dockerfile
+
+### Build (Take about an hour?)
+```
+$ sh docker-build.sh
+```
+### Run
+```
+$ sh docker-run.sh
+
+(You are in the container now)
+
+#
+
+```
+
+
+## X Display back from docker image
+### OSX
+Ref: https://github.com/docker/docker/issues/8710
+
+1. In a host terminal:
+  ```
+  socat TCP-LISTEN:6000,reuseaddr,fork UNIX-CLIENT:\"$DISPLAY\"
+  ```
+
+2. Change the docker-run.sh ip line to "Docker ToolBox" if not using Docker for Mac
+
+3. In another host terminal: `./docker-run.sh`
