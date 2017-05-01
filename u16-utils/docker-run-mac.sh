@@ -13,9 +13,10 @@ ip=$(ifconfig en0 | grep inet | awk '$1=="inet" {print $2}')
 
 docker run -it \
    --env="DISPLAY=$ip:0" \
+   --net="host" \
    --privileged \
    --volume="/dev/bus/usb:/dev/bus/usb:rw" \
    --volume /tmp/.X11-unix:/tmp/.X11-unix \
    --volume "$HOME/sharefolder:/sharefolder" \
    --volume "$HOME/Downloads:/downloads" \
-   kunfengchen/u14-utils:v1 /bin/bash
+   kunfengchen/u16-utils /bin/bash
