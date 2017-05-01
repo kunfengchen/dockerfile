@@ -58,6 +58,11 @@ Add the following `--device` parameter into docker command:
 ```
 --device=/dev/bus/usb:/dev/bus/usb:rwm
 ```
+or (--device is currently not working ...)
+```
+   --privileged \
+   --volume="/dev/bus/usb:/dev/bus/usb:rw" \
+```
 ### Docker for MAC (Not supported)
 ### Docker Toolbox
 1. Stop the "default" vm from VirtualBox
