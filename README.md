@@ -53,3 +53,13 @@ Ref: https://github.com/docker/docker/issues/8710
    kunfengchen/u14-utils /bin/bash
  ```
    
+## Forward USB
+Add the following `--device` parameter into docker command:
+```
+--device=/dev/bus/usb:/dev/bus/usb:rwm
+```
+### Docker for MAC (Not supported)
+### Docker Toolbox
+1. Stop the "default" vm from VirtualBox
+2. Enable USB Controller from VirtualBox->Preferences->Ports->USB
+3. Pick the USB device shown from VirtualBox->Preferences->Ports->USB
