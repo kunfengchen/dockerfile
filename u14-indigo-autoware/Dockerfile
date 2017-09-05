@@ -12,7 +12,7 @@ RUN apt-get update && apt-get install -y \
     libpcap-dev gksu libgl1-mesa-dev \
     ros-indigo-sound-play \
     ros-indigo-nmea-navsat-driver \
-    ros-indigo-desktop-full=1.1.4-0*
+    ros-indigo-desktop-full
 
 ### Install other tools (optional)
 RUN apt-get update && apt-get install -y \
