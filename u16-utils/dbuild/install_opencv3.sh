@@ -5,7 +5,7 @@
 
 # TODO: NOT tested yet
 
-apt-get install -y install build-essential cmake git libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev
+apt-get install -y build-essential cmake git libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev
 
 apt-get install -y python3.5-dev
 
