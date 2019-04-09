@@ -14,4 +14,4 @@ pip --no-cache-dir install \
         flask-socketio
 
 # For matplotlib dependency
-sudo apt-get -y install python-tk
+apt-get -y install python-tk
