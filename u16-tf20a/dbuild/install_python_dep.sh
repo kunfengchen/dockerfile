@@ -9,7 +9,6 @@ pip3 --no-cache-dir install \
         h5py \
         Pillow \
         pandas \
-        kears \
         eventlet \
         flask-socketio
 
